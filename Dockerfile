@@ -1,7 +1,7 @@
 FROM alpine:3.2
 
 ENV SCAN_INTERVAL 1440
-ENV SCAN_PORTS 22,80
+ENV SCAN_PORTS 1-1024
 
 RUN apk add --update nginx nmap libxslt bash && \
     rm -f /var/cache/apk/*
