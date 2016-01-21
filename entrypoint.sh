@@ -8,13 +8,13 @@ doscan() {
 	echo "Report generated at $outfile"
 }
 
-
 [ $# -lt 1 ] && {
   echo "usage: $0 <host1> <host2>"
 	exit 1
 }
 
 HOST_LIST=$@
+echo "docker-port-scan started with hosts: ${HOST_LIST}"
 
 [ ! -d /srv/www ] && mkdir -p /srv/www 
 
