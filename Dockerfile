@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:latest
 
 ENV SCAN_INTERVAL 1440
 ENV SCAN_PORTS 1-1024
